@@ -58,8 +58,19 @@
         <section class="mainpage overlay">
             <div class="container main-container">
                 <h1 class="mainpage-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="btn btn-container" type="button">Заказать услугу</button>
-            </div>
+                <button class="btn btn-container" type="button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis fugiat illo in
+                                        commodi at nesciunt, veniam beatae quod quo numquam enim minima tenetur accusantium debitis
+                                        nostrum laborum nobis maxime!</p> -->
+                        <button data-modal-close class="closes">
+                            <svg class="modal-close">
+                                <use href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
         </section>
         <!--Секція 2 Наші переваги-->
         <section class="benefits">
@@ -115,12 +126,27 @@
             <div class="container container-list">
                 <h2 class="headlines ourworks-headlines">Чем мы занимаемся</h2>
                 <ul class="ourworks-list list">
-                    <li class="ourworks-list-img"><img src="./images/What-we-do/img.jpeg" alt="Десктопные приложения"
-                            width="370" height="294"></li>
-                    <li class="ourworks-list-img"><img  src="./images/What-we-do/img-2.jpeg" alt="Мобильные приложения"
-                            width="370" height="294"></li>
-                    <li class="ourworks-list-img"><img src="./images/What-we-do/img-3.jpeg" alt="Дизайнерские решения"
-                            width="370" height="294"></li>
+                    <li class="ourworks-list-img">
+                        <img src="./images/What-we-do/img.jpeg" alt="Десктопные приложения"
+                            width="370" height="294">
+                        <div class="position-servise-text">
+                            <h3 class="servise-text">Десктопные приложения</h3>
+                        </div>
+                        </li>
+                    <li class="ourworks-list-img">
+                        <img  src="./images/What-we-do/img-2.jpeg" alt="Мобильные приложения"
+                            width="370" height="294">
+                        <div class="position-servise-text">
+                            <h3 class="servise-text">Мобильные приложения</h3>
+                        </div>
+                        </li>
+                    <li class="ourworks-list-img">
+                        <img src="./images/What-we-do/img-3.jpeg" alt="Дизайнерские решения"
+                            width="370" height="294">
+                        <div class="position-servise-text">
+                            <h3 class="servise-text">Дизайнерские решения</h3>
+                        </div>
+                        </li>
                 </ul>
             </div>
         </section>
@@ -389,6 +415,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
