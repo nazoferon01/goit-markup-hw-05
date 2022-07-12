@@ -87,7 +87,6 @@ a {
 
 .header {
     border-bottom: 1px solid #EEEEEE;
-    
 }
 
 .header-container,
@@ -108,6 +107,24 @@ a {
     transition: color var(--animation-transition);
 }
 
+.current-link {
+position: relative;
+align-items: center;
+}
+
+.current-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    background-color: var(--backgraund-btn-color);
+    border-radius: 2px;
+}
+
+
 .header-list-item:not(:last-child){
     margin-right: 50px;  
 }
@@ -124,7 +141,7 @@ a {
     transition: color var(--animation-transition);
 }
 
-.header-list .link.current {
+.header-list .current-link {
     color: var(--accent-color);
 }
 
