@@ -158,6 +158,7 @@ align-items: center;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--general-color);
+    transition: color var(--animation-transition);
 }
 
 .i-email,
@@ -408,7 +409,7 @@ background-position: center;
     height: 44px;
     border-radius: 50%;
     color: var(--team-social-link);
-    transition: color var(--animation-transition);
+    transition: background var(--animation-transition);
   }
   
 .team-link:hover,
